@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 
 const Header = () => {
 
@@ -13,10 +13,10 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <NavLink className={(navDate) => navDate.isActive ? "nav-link active" : "nav-link"} aria-current="page" to="/">Home</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/posts">Link</Link>
+                <NavLink className={(navDate) => navDate.isActive ? "nav-link active" : "nav-link"} to="/posts">Link</NavLink>
               </li>    
             </ul>
           </div>
