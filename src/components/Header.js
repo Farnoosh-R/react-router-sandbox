@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, NavLink, Navigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
 
     return(
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <NavLink className={(navDate) => navDate.isActive ? "nav-link active" : "nav-link"} aria-current="page" to="/">Navbar</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
