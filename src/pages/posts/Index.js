@@ -1,9 +1,9 @@
 import React from "react";
 
-const Posts = () => {
+const IndexPosts = () => {
     return(
         <h1>Posts page</h1>
     )
 }
 
-export default Posts;
+export default IndexPosts;
